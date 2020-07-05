@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   max-width: 1350px;
+   margin: 0 auto;
+}
+
+
+.bg1 {
+    background-image: url("../images/BG1.png");
+   .menu1 {
+       background-color: gray;
+       color: white;
+       .cont0 {
+           display: flex;
+           flex-direction: row-reverse;
+           align-items: center;
+           height: 40px;
+           padding-right: 10px;
+
+           ul {
+               list-style: none;
+               display: flex;
+               li {
+                   margin-left: 50px;
+                   align-items: center;
+                   display: flex;
+               }
+           }
+
+       }
+       
+   }
+   .cont1 {
+       position: relative;
+       .bar {
+           position: absolute;
+           right: 10px;
+           top: 10px;
+           font-size: 20px;
+           display: none;
+           background-color: rgba(70, 65, 68, 0.2);
+           border-radius: 6px;
+           color: white;
+           
+       }
+       .menu2 {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 10px;
+           .vertHorzMenu {
+               list-style: none;
+               display: flex;
+               li {
+                   margin-left: 40px;
+               }
+           }
+       }
+
+   }
+
+   .cont2 {
+       padding: 170px 0;
+       .text1 {
+           width: 700px;
+           color: white;
+           h2 {
+               font-size: 22px;
+               margin: 10px;
+               text-transform: uppercase;
+           }
+
+           h1 {
+               font-size: 26px;
+               margin: 10px;
+               text-transform: uppercase;
+           }
+
+           p {
+               font-size: 20px;
+               margin-left: 10px;
+               padding-right: 120px;
+           }
+       }
+       .btns {
+           display: flex;
+           button {
+               background-color: rgba(139, 137, 137, 0.4);
+               border: white 1px solid;
+               border-radius: 50px;
+               color: white;
+               padding: 18px 35px;
+               margin: 75px 10px;
+           }
+       }
+      
+   }
+}
+
+
+
+/*-------------------------------------meedia 880 ---------------------------------------*/
+
+@media only screen and (max-width: 880px) {
+    
+    .bg1 .cont1 .menu2 ul li {
+        margin-left: 20px;
+    }
+
+  }
+
+  /*-------------------------------------meedia 750 ---------------------------------------*/
+
+  @media only screen and (max-width: 750px) {
+    
+    .bg1 .cont1 {
+        .bar {
+            display: flex; 
+        }
+
+        .menu2 {
+            
+            .vertHorzMenu {
+                
+                flex-direction: column;
+                position: absolute;
+                top: 45px;
+                width: 100%;
+                text-align: center;
+                padding: 0;
+                background-color: darkgrey;
+                margin-left: -10px;
+                display: none;
+                li {
+                    margin-left: 0px;
+                    padding: 10px 0;
+                }
+            }
+        }
+
+    }
+    
+    .bg1 .cont1 .menu2 .showMenu {
+        display: flex;
+    }
+
+    .bg1 .cont2 .text1 {
+        width: 100%;
+    }
+
+    .bg1 .menu1 .cont0 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                padding-right: 0px;
+    
+                ul {
+                    padding-left: 0;
+                    li {
+                        margin-left: 20px;
+                        font-size: 12px;
+                    }
+                }
+
+     }
+                
+    
+  }
+
+/*-------------------------------------meedia 590 ---------------------------------------*/
+
+  @media only screen and (max-width: 590px) {
+    
+    .bg1 .cont2 {
+        .btns {
+            display: inline-grid;
+            button {
+                padding: 18px 35px;
+                margin: 10px 10px;
+             }
+        }
+        .text1 {
+            h1 {
+                font-size: 20px;
+            }
+    
+            h2 {
+                font-size: 16px;
+            }
+            
+            p {
+                font-size: 12px;
+            }
+        }
+        
+    } 
+
+  }
+
+
+/*-------------------------------------meedia 480 ---------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .bg1 .menu1 .cont0 ul  li {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+}
+
+
+  
+            
+
+        
+        
